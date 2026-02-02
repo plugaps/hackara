@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: AWS S3
     steps:
       # 1. Checkout del codice
       - name: Checkout Repository
