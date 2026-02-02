@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html class="light" lang="it">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Hackàra | Rural Innovation Hub a Pignola</title>
-    <meta name="description" content="Unisciti ad Hackàra, il Rural Innovation Hub nel cuore di Pignola. Coworking, community e innovazione per hacker culturali e nomadi digitali."/>
-    <meta name="keywords" content="coworking pignola, innovation hub basilicata, rural innovation, nomadi digitali, hacker culturali, coworking basilicata"/>
+    <meta name="description"
+        content="Unisciti ad Hackàra, il Rural Innovation Hub nel cuore di Pignola. Coworking, community e innovazione per hacker culturali e nomadi digitali." />
+    <meta name="keywords"
+        content="coworking pignola, innovation hub basilicata, rural innovation, nomadi digitali, hacker culturali, coworking basilicata" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -38,35 +42,51 @@
             background: rgba(246, 248, 247, 0.8);
             backdrop-filter: blur(12px);
         }
+
         .dark .glass-nav {
             background: rgba(16, 34, 28, 0.8);
         }
+
         .glitch-overlay {
-            background: linear-gradient(rgba(26, 58, 47, 0.4), rgba(43, 238, 173, 0.1)), repeating-linear-gradient(0deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 1px, transparent 1px, transparent 2px);
+            background: linear-gradient(rgba(26, 58, 47, 0.4), rgba(43, 238, 173, 0.1)), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0px, rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 2px);
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-earthy-green dark:text-white transition-colors duration-300">
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-earthy-green dark:text-white transition-colors duration-300">
     <!-- Top Navigation Bar -->
     <header class="fixed top-0 w-full z-50 border-b border-earthy-green/10 dark:border-white/10 glass-nav">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div class="size-8 text-primary">
                     <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
-                        <path clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z" fill="currentColor" fill-rule="evenodd"></path>
+                        <path
+                            d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z"
+                            fill="currentColor"></path>
+                        <path clip-rule="evenodd"
+                            d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z"
+                            fill="currentColor" fill-rule="evenodd"></path>
                     </svg>
                 </div>
                 <h2 class="text-2xl font-black tracking-tighter uppercase">Hackàra</h2>
             </div>
             <nav class="hidden md:flex items-center gap-10">
-                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#home">Home</a>
-                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="spazi.html">Spazi</a>
-                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#community">Community</a>
-                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#eventi">Eventi</a>
-                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#contatti">Contatti</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="index.html">Home</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="spazi.html">Spazi</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="gaming.html">Gaming</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="#community">Community</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="#eventi">Eventi</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="#contatti">Contatti</a>
             </nav>
-            <button class="bg-primary text-background-dark text-sm font-black uppercase tracking-widest px-8 h-12 rounded-full hover:scale-105 transition-transform active:scale-95">
+            <button
+                class="bg-primary text-background-dark text-sm font-black uppercase tracking-widest px-8 h-12 rounded-full hover:scale-105 transition-transform active:scale-95">
                 Prenota il tuo Posto
             </button>
         </div>
@@ -76,25 +96,31 @@
     <main class="pt-20" id="home">
         <section class="relative min-h-[90vh] flex items-center justify-center px-6 overflow-hidden">
             <div class="absolute inset-0 z-0">
-                <div class="w-full h-full bg-center bg-no-repeat bg-cover transform scale-105" style='background-image: url("images/hero-pignola.jpg");'></div>
+                <div class="w-full h-full bg-center bg-no-repeat bg-cover transform scale-105"
+                    style='background-image: url("images/hero-pignola.jpg");'></div>
                 <div class="absolute inset-0 glitch-overlay"></div>
             </div>
             <div class="relative z-10 max-w-4xl text-center">
-                <div class="inline-block px-4 py-1 mb-6 bg-primary/20 backdrop-blur-md border border-primary/30 rounded-full">
+                <div
+                    class="inline-block px-4 py-1 mb-6 bg-primary/20 backdrop-blur-md border border-primary/30 rounded-full">
                     <span class="text-primary text-xs font-black uppercase tracking-[0.2em]">Rural Innovation Hub</span>
                 </div>
-                <h1 class="text-white text-6xl md:text-8xl font-black leading-none tracking-tighter mb-8 drop-shadow-2xl">
-                    HACKÀRA:<br/>
+                <h1
+                    class="text-white text-6xl md:text-8xl font-black leading-none tracking-tighter mb-8 drop-shadow-2xl">
+                    HACKÀRA:<br />
                     <span class="text-primary">COWORKING</span> PER HACKER CULTURALI
                 </h1>
                 <p class="text-white/90 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mx-auto mb-12">
-                    Riscriviamo il codice del territorio. Un laboratorio creativo nel cuore di Pignola per sognatori digitali e artigiani del futuro.
+                    Riscriviamo il codice del territorio. Un laboratorio creativo nel cuore di Pignola per sognatori
+                    digitali e artigiani del futuro.
                 </p>
                 <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                    <button class="w-full md:w-auto min-w-[240px] bg-primary text-background-dark h-16 rounded-full text-lg font-black uppercase tracking-widest hover:shadow-[0_0_30px_rgba(43,238,173,0.4)] transition-all">
+                    <button
+                        class="w-full md:w-auto min-w-[240px] bg-primary text-background-dark h-16 rounded-full text-lg font-black uppercase tracking-widest hover:shadow-[0_0_30px_rgba(43,238,173,0.4)] transition-all">
                         Inizia Ora
                     </button>
-                    <a href="spazi.html" class="w-full md:w-auto min-w-[240px] bg-white/10 backdrop-blur-md border border-white/20 text-white h-16 rounded-full text-lg font-black uppercase tracking-widest hover:bg-white/20 transition-all flex items-center justify-center">
+                    <a href="spazi.html"
+                        class="w-full md:w-auto min-w-[240px] bg-white/10 backdrop-blur-md border border-white/20 text-white h-16 rounded-full text-lg font-black uppercase tracking-widest hover:bg-white/20 transition-all flex items-center justify-center">
                         Esplora gli spazi
                     </a>
                 </div>
@@ -113,24 +139,39 @@
                         La nostra missione è il <span class="text-primary">cultural hacking</span>.
                     </h2>
                     <p class="text-lg text-earthy-green/70 dark:text-white/70 leading-relaxed">
-                        Hackàra non è solo un ufficio. È un hub di rigenerazione rurale dove la tecnologia incontra la tradizione. Vogliamo trasformare Pignola in un punto di riferimento per l'innovazione creativa, dimostrando che il futuro non abita solo nelle metropoli.
+                        Hackàra non è solo un ufficio. È un hub di rigenerazione rurale dove la tecnologia incontra la
+                        tradizione. Vogliamo trasformare Pignola in un punto di riferimento per l'innovazione creativa,
+                        dimostrando che il futuro non abita solo nelle metropoli.
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white/50 dark:bg-white/5 hover:border-primary/50 transition-colors">
+                        <div
+                            class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white/50 dark:bg-white/5 hover:border-primary/50 transition-colors">
                             <span class="material-symbols-outlined text-4xl text-primary mb-4">innovazione</span>
                             <h3 class="text-xl font-bold mb-2">Community Hub</h3>
-                            <p class="text-sm opacity-70">Portiamo tecnologie di frontiera nel cuore della Basilicata.</p>
+                            <p class="text-sm opacity-70">Portiamo tecnologie di frontiera nel cuore della Basilicata.
+                            </p>
                         </div>
-                        <div class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white/50 dark:bg-white/5 hover:border-primary/50 transition-colors">
+                        <div
+                            class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white/50 dark:bg-white/5 hover:border-primary/50 transition-colors">
                             <span class="material-symbols-outlined text-4xl text-primary mb-4">language</span>
                             <h3 class="text-xl font-bold mb-2">Hacking Culturale</h3>
-                            <p class="text-sm opacity-70">Riscriviamo i modelli sociali attraverso la creatività diffusa.</p>
+                            <p class="text-sm opacity-70">Riscriviamo i modelli sociali attraverso la creatività
+                                diffusa.</p>
                         </div>
+                        <a href="gaming.html"
+                            class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white/50 dark:bg-white/5 hover:border-primary/50 transition-colors group">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-4">sports_esports</span>
+                            <h3 class="text-xl font-bold mb-2">Gaming Area</h3>
+                            <p class="text-sm opacity-70">Tornei di console e giochi da tavolo per ragazzi.</p>
+                        </a>
                     </div>
                 </div>
                 <div class="relative group">
-                    <div class="absolute -inset-4 bg-primary/20 rounded-xl blur-2xl group-hover:bg-primary/30 transition-all"></div>
-                    <div class="relative aspect-square rounded-xl bg-center bg-cover border-4 border-white/10 overflow-hidden" style='background-image: url("images/office-rustic.jpg");'></div>
+                    <div
+                        class="absolute -inset-4 bg-primary/20 rounded-xl blur-2xl group-hover:bg-primary/30 transition-all">
+                    </div>
+                    <div class="relative aspect-square rounded-xl bg-center bg-cover border-4 border-white/10 overflow-hidden"
+                        style='background-image: url("images/office-rustic.jpg");'></div>
                 </div>
             </div>
         </section>
@@ -146,23 +187,31 @@
                     Un Ecosistema <span class="text-primary">Fertile</span>
                 </h2>
                 <p class="text-lg text-earthy-green/70 dark:text-white/70 leading-relaxed max-w-3xl mb-12">
-                    Entra a far parte di una community vibrante di innovatori, creativi e professionisti. Hackàra è il punto d'incontro tra talento globale e saggezza locale, un luogo dove nascono connessioni e progetti che trasformano il territorio.
+                    Entra a far parte di una community vibrante di innovatori, creativi e professionisti. Hackàra è il
+                    punto d'incontro tra talento globale e saggezza locale, un luogo dove nascono connessioni e progetti
+                    che trasformano il territorio.
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white dark:bg-background-dark hover:border-primary/50 transition-colors">
+                    <div
+                        class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white dark:bg-background-dark hover:border-primary/50 transition-colors">
                         <span class="material-symbols-outlined text-4xl text-primary mb-4">groups</span>
                         <h3 class="text-xl font-bold mb-2">GDG Basilicata</h3>
-                        <p class="text-sm opacity-70">Community di sviluppatori e appassionati di tecnologie Google che organizza meetup, workshop e hackathon.</p>
+                        <p class="text-sm opacity-70">Community di sviluppatori e appassionati di tecnologie Google che
+                            organizza meetup, workshop e hackathon.</p>
                     </div>
-                    <div class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white dark:bg-background-dark hover:border-primary/50 transition-colors">
+                    <div
+                        class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white dark:bg-background-dark hover:border-primary/50 transition-colors">
                         <span class="material-symbols-outlined text-4xl text-primary mb-4">cloud</span>
                         <h3 class="text-xl font-bold mb-2">AWS User Group</h3>
-                        <p class="text-sm opacity-70">Gruppo di professionisti specializzati in cloud computing che condivide conoscenze sui servizi Amazon Web Services.</p>
+                        <p class="text-sm opacity-70">Gruppo di professionisti specializzati in cloud computing che
+                            condivide conoscenze sui servizi Amazon Web Services.</p>
                     </div>
-                    <div class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white dark:bg-background-dark hover:border-primary/50 transition-colors">
+                    <div
+                        class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white dark:bg-background-dark hover:border-primary/50 transition-colors">
                         <span class="material-symbols-outlined text-4xl text-primary mb-4">public</span>
                         <h3 class="text-xl font-bold mb-2">Progetti Erasmus+</h3>
-                        <p class="text-sm opacity-70">Scambi culturali e formativi con tutta Europa che portano giovani da diversi paesi nel borgo.</p>
+                        <p class="text-sm opacity-70">Scambi culturali e formativi con tutta Europa che portano giovani
+                            da diversi paesi nel borgo.</p>
                     </div>
                 </div>
             </div>
@@ -178,23 +227,32 @@
                 Non solo lavoro. <span class="text-primary">Eventi che ispirano</span>.
             </h2>
             <p class="text-lg text-earthy-green/70 dark:text-white/70 leading-relaxed max-w-3xl mb-12">
-                Da conferenze tech internazionali a festival culturali, il nostro calendario è ricco di appuntamenti per formarsi, fare networking e vivere il territorio. Pignola non dorme mai.
+                Da conferenze tech internazionali a festival culturali, il nostro calendario è ricco di appuntamenti per
+                formarsi, fare networking e vivere il territorio. Pignola non dorme mai.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="relative group overflow-hidden rounded-xl">
-                    <div class="aspect-video bg-center bg-cover" style='background-image: url("images/come-to-code.jpg");'></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent flex flex-col justify-end p-8">
-                        <span class="text-primary text-xs font-black uppercase tracking-widest mb-2">Conferenza Tech</span>
+                    <div class="aspect-video bg-center bg-cover"
+                        style='background-image: url("images/come-to-code.jpg");'></div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent flex flex-col justify-end p-8">
+                        <span class="text-primary text-xs font-black uppercase tracking-widest mb-2">Conferenza
+                            Tech</span>
                         <h3 class="text-white text-2xl font-bold mb-2">Come To Code</h3>
-                        <p class="text-white/80 text-sm">Una delle più importanti conferenze tecnologiche gratuite del Sud Italia. Speaker internazionali, formazione di qualità e networking di alto livello.</p>
+                        <p class="text-white/80 text-sm">Una delle più importanti conferenze tecnologiche gratuite del
+                            Sud Italia. Speaker internazionali, formazione di qualità e networking di alto livello.</p>
                     </div>
                 </div>
                 <div class="relative group overflow-hidden rounded-xl">
-                    <div class="aspect-video bg-center bg-cover" style='background-image: url("images/pignola-blues.jpg");'></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent flex flex-col justify-end p-8">
-                        <span class="text-primary text-xs font-black uppercase tracking-widest mb-2">Festival Musicale</span>
+                    <div class="aspect-video bg-center bg-cover"
+                        style='background-image: url("images/pignola-blues.jpg");'></div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent flex flex-col justify-end p-8">
+                        <span class="text-primary text-xs font-black uppercase tracking-widest mb-2">Festival
+                            Musicale</span>
                         <h3 class="text-white text-2xl font-bold mb-2">Pignola in Blues</h3>
-                        <p class="text-white/80 text-sm">Uno dei festival blues più longevi e prestigiosi d'Europa. Oltre 30 anni di storia e artisti di fama mondiale.</p>
+                        <p class="text-white/80 text-sm">Uno dei festival blues più longevi e prestigiosi d'Europa.
+                            Oltre 30 anni di storia e artisti di fama mondiale.</p>
                     </div>
                 </div>
             </div>
@@ -207,9 +265,11 @@
                     Pronto a <span class="text-primary">hackerare</span> il futuro?
                 </h2>
                 <p class="text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-12">
-                    Unisciti alla community di Hackàra e trasforma il tuo modo di lavorare, creare e vivere. Il futuro è rurale.
+                    Unisciti alla community di Hackàra e trasforma il tuo modo di lavorare, creare e vivere. Il futuro è
+                    rurale.
                 </p>
-                <button class="bg-primary text-background-dark h-16 px-12 rounded-full text-lg font-black uppercase tracking-widest hover:shadow-[0_0_30px_rgba(43,238,173,0.4)] transition-all">
+                <button
+                    class="bg-primary text-background-dark h-16 px-12 rounded-full text-lg font-black uppercase tracking-widest hover:shadow-[0_0_30px_rgba(43,238,173,0.4)] transition-all">
                     Contattaci Ora
                 </button>
             </div>
@@ -223,13 +283,18 @@
                 <div class="flex items-center gap-3 mb-4">
                     <div class="size-8 text-primary">
                         <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
-                            <path clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z" fill="currentColor" fill-rule="evenodd"></path>
+                            <path
+                                d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z"
+                                fill="currentColor"></path>
+                            <path clip-rule="evenodd"
+                                d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z"
+                                fill="currentColor" fill-rule="evenodd"></path>
                         </svg>
                     </div>
                     <h2 class="text-2xl font-black tracking-tighter uppercase">Hackàra</h2>
                 </div>
-                <p class="text-white/70 text-sm">Rural Innovation Hub per hacker culturali nel cuore di Pignola, Basilicata.</p>
+                <p class="text-white/70 text-sm">Rural Innovation Hub per hacker culturali nel cuore di Pignola,
+                    Basilicata.</p>
             </div>
             <div>
                 <h3 class="text-lg font-bold mb-4">Contatti</h3>
@@ -251,4 +316,5 @@
         </div>
     </footer>
 </body>
+
 </html>
