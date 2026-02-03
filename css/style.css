@@ -1,0 +1,32 @@
+.glass-nav {
+    background: rgba(246, 248, 247, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass-nav {
+    background: rgba(16, 34, 28, 0.8);
+}
+
+/* Ensure body has space for fixed nav */
+body {
+    padding-top: 5rem;
+}
+
+/* Custom scrollbar for a premium feel */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.dark ::-webkit-scrollbar-track {
+    background: #10221c;
+}
+::-webkit-scrollbar-thumb {
+    background: #2beead;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #24d49a;
+}

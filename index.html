@@ -37,16 +37,9 @@
             },
         }
     </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/include.js" defer></script>
     <style>
-        .glass-nav {
-            background: rgba(246, 248, 247, 0.8);
-            backdrop-filter: blur(12px);
-        }
-
-        .dark .glass-nav {
-            background: rgba(16, 34, 28, 0.8);
-        }
-
         .glitch-overlay {
             background: linear-gradient(rgba(26, 58, 47, 0.4), rgba(43, 238, 173, 0.1)), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0px, rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 2px);
         }
@@ -85,9 +78,34 @@
                 <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
                     href="#contatti">Contatti</a>
             </nav>
+            <div class="flex items-center gap-4">
+                <a href="https://calendar.app.google/NJnoesBwdSCYDm2x7" target="_blank"
+                    class="hidden md:flex bg-primary text-background-dark text-sm font-black uppercase tracking-widest px-8 h-12 rounded-full hover:scale-105 transition-transform active:scale-95 items-center justify-center">
+                    Prenota
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-primary p-2">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-background-light dark:bg-background-dark border-b border-earthy-green/10 dark:border-white/10 glass-nav py-6 px-6 flex flex-col gap-6 shadow-xl">
+            <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                href="index.html">Home</a>
+            <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                href="spazi.html">Spazi</a>
+            <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                href="gaming.html">Gaming</a>
+            <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                href="#community">Community</a>
+            <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                href="#eventi">Eventi</a>
+            <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                href="#contatti">Contatti</a>
             <a href="https://calendar.app.google/NJnoesBwdSCYDm2x7" target="_blank"
-                class="bg-primary text-background-dark text-sm font-black uppercase tracking-widest px-8 h-12 rounded-full hover:scale-105 transition-transform active:scale-95 flex items-center justify-center">
-                Prenota il tuo Posto
+                class="bg-primary text-background-dark text-sm font-black uppercase tracking-widest w-full h-12 rounded-full flex items-center justify-center">
+                Prenota
             </a>
         </div>
     </header>
@@ -277,10 +295,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-background-dark text-white py-12 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-                <div class="flex items-center gap-3 mb-4">
+    <footer class="bg-background-dark text-white py-20 px-6 mt-auto">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-3 mb-6">
                     <div class="size-8 text-primary">
                         <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -291,37 +309,65 @@
                                 fill="currentColor" fill-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <h2 class="text-2xl font-black tracking-tighter uppercase">Hackàra</h2>
+                    <h2 class="text-2xl font-black tracking-tighter uppercase text-white">Hackàra</h2>
                 </div>
-                <div>
-                    <p class="text-white/70 text-sm">Rural Innovation Hub per hacker culturali nel cuore di Pignola,
-                        Basilicata.</p>
+                <p class="text-white/70 text-sm leading-relaxed">Rural Innovation Hub per hacker culturali nel cuore di
+                    Pignola. Riscriviamo insieme il codice del territorio.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-6 text-white uppercase tracking-wider">Navigazione</h3>
+                <ul class="flex flex-col gap-4">
+                    <li><a href="index.html" class="text-white/60 hover:text-primary transition-colors text-sm">Home</a>
+                    </li>
+                    <li><a href="spazi.html" class="text-white/60 hover:text-primary transition-colors text-sm">Spazi &
+                            Servizi</a></li>
+                    <li><a href="gaming.html" class="text-white/60 hover:text-primary transition-colors text-sm">Gaming
+                            Area</a></li>
+                    <li><a href="#community"
+                            class="text-white/60 hover:text-primary transition-colors text-sm">Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-6 text-white uppercase tracking-wider">Link Utili</h3>
+                <ul class="flex flex-col gap-4">
+                    <li>
+                        <p class="text-white/60 text-sm">Email: <a href="mailto:segreteria@pignolalug.it"
+                                class="hover:text-primary transition-colors">segreteria@pignolalug.it</a></p>
+                    </li>
+                    <li>
+                        <p class="text-white/60 text-sm">Tel: <a href="tel:+393408075592"
+                                class="hover:text-primary transition-colors">+39 340 807 5592</a></p>
+                    </li>
+                    <li><a href="http://bit.ly/45zxoVX" target="_blank"
+                            class="text-white/60 hover:text-primary transition-colors text-sm underline underline-offset-4">Regolamento
+                            Hub</a></li>
+                    <li>
+                        <p class="text-white/60 text-sm">Pignola (PZ), Basilicata</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-6 text-white uppercase tracking-wider">Seguici</h3>
+                <div class="flex gap-6">
+                    <a href="https://www.facebook.com/lug.pignola" target="_blank"
+                        class="text-primary hover:text-white transition-colors">
+                        <span class="text-sm font-bold">Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/p__l__u__g/" target="_blank"
+                        class="text-primary hover:text-white transition-colors">
+                        <span class="text-sm font-bold">Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/plugaps/" target="_blank"
+                        class="text-primary hover:text-white transition-colors">
+                        <span class="text-sm font-bold">LinkedIn</span>
+                    </a>
                 </div>
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Link Utili</h3>
-                    <p class="text-white/70 text-sm mb-2">Email: <a href="mailto:segreteria@pignolalug.it"
-                            class="hover:text-primary transition-colors">segreteria@pignolalug.it</a></p>
-                    <p class="text-white/70 text-sm mb-2">Tel: <a href="tel:+393408075592"
-                            class="hover:text-primary transition-colors">+39 340 807 5592</a></p>
-                    <p class="text-white/70 text-sm mb-2"><a href="http://bit.ly/45zxoVX" target="_blank"
-                            class="hover:text-primary transition-colors underline underline-offset-4">Regolamento
-                            Hub</a></p>
-                    <p class="text-white/70 text-sm">Pignola (PZ), Basilicata</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Seguici</h3>
-                    <div class="flex gap-4">
-                        <a href="https://www.facebook.com/lug.pignola" target="_blank"
-                            class="text-primary hover:text-white transition-colors">Facebook</a>
-                        <a href="https://www.instagram.com/p__l__u__g/" target="_blank"
-                            class="text-primary hover:text-white transition-colors">Instagram</a>
-                        <a href="https://www.linkedin.com/company/plugaps/" target="_blank"
-                            class="text-primary hover:text-white transition-colors">LinkedIn</a>
-                    </div>
-                </div>
-                <div class="max-w-7xl mx-auto mt-8 pt-8 border-t border-white/10 text-center text-white/50 text-sm">
-                    <p>&copy; 2025 Hackàra - Associazione Culturale PLUG APS. Tutti i diritti riservati.</p>
-                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 text-center text-white/30 text-[10px] uppercase tracking-[0.2em]">
+            <p>&copy; 2025 Hackàra - Associazione Culturale PLUG APS. Creato con passione in Basilicata.</p>
+        </div>
     </footer>
 </body>
 
