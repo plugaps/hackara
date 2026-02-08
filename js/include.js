@@ -5,9 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (btn && menu) {
         btn.addEventListener("click", () => {
             menu.classList.toggle("hidden");
-            const icon = btn.querySelector(".material-symbols-outlined");
-            if (icon) {
-                icon.textContent = menu.classList.contains("hidden") ? "menu" : "close";
+            const menuIcon = btn.querySelector(".menu-icon");
+            const closeIcon = btn.querySelector(".close-icon");
+            if (menuIcon && closeIcon) {
+                menuIcon.classList.toggle("hidden");
+                closeIcon.classList.toggle("hidden");
             }
         });
 
@@ -15,8 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
         menu.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
                 menu.classList.add("hidden");
-                const icon = btn.querySelector(".material-symbols-outlined");
-                if (icon) icon.textContent = "menu";
+                const menuIcon = btn.querySelector(".menu-icon");
+                const closeIcon = btn.querySelector(".close-icon");
+                if (menuIcon && closeIcon) {
+                    menuIcon.classList.remove("hidden");
+                    closeIcon.classList.add("hidden");
+                }
             });
         });
     }

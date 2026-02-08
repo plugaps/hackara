@@ -11,8 +11,7 @@
         content="coworking pignola, spazi coworking basilicata, sale meeting, postazioni lavoro, maker space" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -22,6 +21,7 @@
                         "primary": "#2beead",
                         "background-light": "#f6f8f7",
                         "background-dark": "#10221c",
+                        "earthy-green": "#1a3a2f",
                     },
                     fontFamily: {
                         "display": ["Inter", "sans-serif"]
@@ -33,11 +33,7 @@
     </script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/include.js" defer></script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
+    <script src="js/include.js" defer></script>
 </head>
 
 <body
@@ -77,7 +73,19 @@
                     Prenota
                 </a>
                 <button id="mobile-menu-btn" class="md:hidden text-primary p-2">
-                    <span class="material-symbols-outlined text-3xl">menu</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="menu-icon">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="close-icon hidden">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
                 </button>
             </div>
         </div>
@@ -134,22 +142,45 @@
             <span class="text-sm font-semibold mr-2 opacity-50">Filtra per:</span>
             <div
                 class="flex h-10 items-center gap-x-2 rounded-full bg-primary/20 border border-primary/30 px-5 cursor-pointer hover:bg-primary/30 transition-colors">
-                <span class="material-symbols-outlined text-sm">bolt</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-primary">
+                    <path d="M13 2 L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
                 <p class="text-sm font-bold">Fibra Ultra</p>
             </div>
             <div
                 class="flex h-10 items-center gap-x-2 rounded-full bg-gray-100 dark:bg-white/5 px-5 cursor-pointer hover:bg-primary/10 transition-colors">
-                <span class="material-symbols-outlined text-sm">coffee</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="opacity-70">
+                    <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+                    <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+                    <line x1="6" x2="6" y1="2" y2="4"></line>
+                    <line x1="10" x2="10" y1="2" y2="4"></line>
+                    <line x1="14" x2="14" y1="2" y2="4"></line>
+                </svg>
                 <p class="text-sm font-medium">Caffè Specialty</p>
             </div>
             <div
                 class="flex h-10 items-center gap-x-2 rounded-full bg-gray-100 dark:bg-white/5 px-5 cursor-pointer hover:bg-primary/10 transition-colors">
-                <span class="material-symbols-outlined text-sm">print</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="opacity-70">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
                 <p class="text-sm font-medium">Stampa 3D</p>
             </div>
             <div
                 class="flex h-10 items-center gap-x-2 rounded-full bg-gray-100 dark:bg-white/5 px-5 cursor-pointer hover:bg-primary/10 transition-colors">
-                <span class="material-symbols-outlined text-sm">videocam</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="opacity-70">
+                    <path d="m22 8-6 4 6 4V8Z"></path>
+                    <rect x="2" y="6" width="14" height="12" rx="2" ry="2"></rect>
+                </svg>
                 <p class="text-sm font-medium">Studio AV</p>
             </div>
         </div>
@@ -181,11 +212,26 @@
                     </p>
                     <div class="flex flex-col gap-3 mb-6">
                         <div class="flex items-center gap-2 text-xs opacity-60">
-                            <span class="material-symbols-outlined text-sm">chair_alt</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="opacity-70">
+                                <path d="M7 18V5"></path>
+                                <path d="M17 5v13"></path>
+                                <path d="M7 11h10"></path>
+                                <path d="M7 15h10"></path>
+                                <path d="M8 5h8"></path>
+                            </svg>
                             <span>Capacità: 4 Postazioni Hot Desk</span>
                         </div>
                         <div class="flex items-center gap-2 text-xs opacity-60">
-                            <span class="material-symbols-outlined text-sm">wifi</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="opacity-70">
+                                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                                <line x1="12" x2="12.01" y1="20" y2="20"></line>
+                            </svg>
                             <span>Tech: Fibra 1Gbps, Caffè Specialty</span>
                         </div>
                     </div>
@@ -216,11 +262,25 @@
                     </p>
                     <div class="flex flex-col gap-3 mb-6">
                         <div class="flex items-center gap-2 text-xs opacity-60">
-                            <span class="material-symbols-outlined text-sm">weekend</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="opacity-70">
+                                <path d="M3 14h18"></path>
+                                <path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"></path>
+                                <path d="M2 9h20v2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V9Z"></path>
+                            </svg>
                             <span>Servizi: Area Lounge, Biblioteca</span>
                         </div>
                         <div class="flex items-center gap-2 text-xs opacity-60">
-                            <span class="material-symbols-outlined text-sm">local_cafe</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="opacity-70">
+                                <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+                                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+                                <line x1="6" x2="6" y1="2" y2="4"></line>
+                                <line x1="10" x2="10" y1="2" y2="4"></line>
+                                <line x1="14" x2="14" y1="2" y2="4"></line>
+                            </svg>
                             <span>Extra: Angolo Tisane</span>
                         </div>
                     </div>
@@ -250,11 +310,24 @@
                     </p>
                     <div class="flex flex-col gap-3 mb-6">
                         <div class="flex items-center gap-2 text-xs opacity-60">
-                            <span class="material-symbols-outlined text-sm">sports_esports</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="opacity-70">
+                                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                <line x1="6" x2="6" y1="12" y2="12"></line>
+                                <line x1="18" x2="18" y1="12" y2="12"></line>
+                                <line x1="12" x2="12" y1="6" y2="10"></line>
+                            </svg>
                             <span>Console, D&D, Board Games</span>
                         </div>
                         <div class="flex items-center gap-2 text-xs opacity-60">
-                            <span class="material-symbols-outlined text-sm">school</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="opacity-70">
+                                <path d="M22 10v6"></path>
+                                <path d="M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                            </svg>
                             <span>Focus: Apprendimento e Socialità</span>
                         </div>
                     </div>
@@ -266,12 +339,166 @@
             </div>
         </div>
 
+        <!-- Regolamento & Prenotazione Section -->
+        <section class="py-24 border-t border-gray-100 dark:border-white/5" id="regolamento">
+            <div class="flex items-center gap-2 text-primary mb-4">
+                <span class="h-px w-8 bg-primary"></span>
+                <span class="text-xs font-black uppercase tracking-widest">Informazioni Importanti</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black leading-tight mb-8">Regolamento & <span
+                    class="text-primary">Prenotazione</span></h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+                <!-- Welcome & Membership -->
+                <div class="lg:col-span-2 flex flex-col gap-6">
+                    <div class="p-8 rounded-3xl bg-primary/10 border border-primary/20 backdrop-blur-sm">
+                        <p class="text-xl font-medium leading-relaxed mb-4">
+                            Benvenuto nello spazio Coworking di <span class="font-bold text-primary">PLUG APS</span>.
+                        </p>
+                        <p class="text-gray-500 dark:text-primary/70 mb-8">
+                            La prenotazione è riservata ai soli <span
+                                class="font-bold text-earthy-green dark:text-white">soci in regola con il
+                                tesseramento</span>. Assicurati di aver rinnovato la tua quota prima di procedere.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Safety Rules -->
+                            <div
+                                class="flex flex-col gap-4 p-6 bg-white dark:bg-background-dark rounded-2xl border border-primary/10 h-full">
+                                <div class="flex items-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-primary">
+                                        <path d="m14 13-5 5 5 5"></path>
+                                        <path d="m5 8 5-5 5 5"></path>
+                                        <path d="m18 14-5 5-5-5"></path>
+                                    </svg>
+                                    <h4 class="font-bold">Regolamento</h4>
+                                </div>
+                                <p class="text-sm opacity-70 flex-1">È obbligatorio visionare le norme di sicurezza e
+                                    responsabilità.</p>
+                                <a href="http://bit.ly/45zxoVX" target="_blank"
+                                    class="w-full py-3 bg-earthy-green text-white text-center font-black uppercase tracking-widest text-xs rounded-full hover:bg-earthy-green/90 transition-all">
+                                    Leggi Regole
+                                </a>
+                            </div>
+
+                            <!-- Registration -->
+                            <div
+                                class="flex flex-col gap-4 p-6 bg-primary text-background-dark rounded-2xl border border-primary/10 h-full">
+                                <div class="flex items-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-background-dark">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <line x1="19" x2="19" y1="8" y2="14"></line>
+                                        <line x1="22" x2="16" y1="11" y2="11"></line>
+                                    </svg>
+                                    <h4 class="font-bold">Diventa Socio</h4>
+                                </div>
+                                <p class="text-sm font-medium flex-1">
+                                    <span class="block text-lg font-black tracking-tighter uppercase">Quota: 10€</span>
+                                    Socio Sostenitore (Base). Valida per 1 anno.
+                                </p>
+                                <a href="https://forms.gle/43VbJMkphAVmWshF6" target="_blank"
+                                    class="w-full py-3 bg-background-dark text-white text-center font-black uppercase tracking-widest text-xs rounded-full hover:scale-105 transition-all">
+                                    Registrati Ora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Note -->
+                <div
+                    class="p-8 rounded-3xl border border-earthy-green/10 dark:border-white/10 bg-earthy-green text-white flex flex-col justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-primary mb-4">
+                        <path d="M12 20h9"></path>
+                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-4">Nota per la Prenotazione</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">
+                        Nel modulo di prenotazione, ti verrà chiesto di scrivere <span
+                            class="text-primary font-black">"ACCETTO"</span> per confermare di aver letto e compreso il
+                        regolamento.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Quick Rules Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="p-8 rounded-3xl border border-gray-100 dark:border-white/10 bg-white dark:bg-white/5 hover:border-primary/50 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-primary mb-4">
+                        <path d="M7 18V5"></path>
+                        <path d="M17 5v13"></path>
+                        <path d="M7 11h10"></path>
+                        <path d="M7 15h10"></path>
+                        <path d="M8 5h8"></path>
+                    </svg>
+                    <h4 class="text-lg font-bold mb-2">Postazioni</h4>
+                    <p class="text-sm opacity-60">Disponibili 3 posti. Non occupare più di una scrivania alla volta.</p>
+                </div>
+                <div
+                    class="p-8 rounded-3xl border border-gray-100 dark:border-white/10 bg-white dark:bg-white/5 hover:border-primary/50 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-primary mb-4">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <h4 class="text-lg font-bold mb-2">Fasce Orarie</h4>
+                    <p class="text-sm opacity-60">Mattina: 09:00 - 13:00<br>Pomeriggio: 14:00 - 18:00</p>
+                </div>
+                <div
+                    class="p-8 rounded-3xl border border-gray-100 dark:border-white/10 bg-white dark:bg-white/5 hover:border-primary/50 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-primary mb-4">
+                        <path
+                            d="M20.42 4.58a5 5 0 0 1 0 7.07l-7.07 7.07a1 1 0 0 1-1.41 0L4.86 11.66a5 5 0 0 1 7.07-7.07 5 5 0 0 1 7.07 0Z">
+                        </path>
+                        <path d="M12 21v-2"></path>
+                    </svg>
+                    <h4 class="text-lg font-bold mb-2">Responsabilità</h4>
+                    <p class="text-sm opacity-60">Ogni socio è responsabile dei propri oggetti. L'APS non risponde di
+                        furti o danni.</p>
+                </div>
+                <div
+                    class="p-8 rounded-3xl border border-gray-100 dark:border-white/10 bg-white dark:bg-white/5 hover:border-primary/50 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-primary mb-4">
+                        <path d="M3 11V9a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2"></path>
+                        <path d="M9 21h6"></path>
+                        <path d="M12 15v6"></path>
+                        <path d="M3 11h18"></path>
+                    </svg>
+                    <h4 class="text-lg font-bold mb-2">Ordine e Igiene</h4>
+                    <p class="text-sm opacity-60">Lascia la postazione pulita e igienizzata per il socio successivo.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Tech Infrastructure -->
         <section class="py-20 border-t border-gray-100 dark:border-white/5">
             <h2 class="text-4xl font-black mb-12 tracking-tighter">Infrastruttura Tecnologica</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="p-8 rounded-3xl border border-gray-100 dark:border-white/10 bg-white dark:bg-white/5">
-                    <span class="material-symbols-outlined text-4xl text-primary mb-6">router</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-primary mb-6">
+                        <rect x="2" y="14" width="20" height="8" rx="2"></rect>
+                        <polyline points="15 22 15 17 17 17 17 22"></polyline>
+                        <line x1="2" x2="22" y1="18" y2="18"></line>
+                        <line x1="6" x2="6" y1="18" y2="18"></line>
+                        <line x1="10" x2="10" y1="18" y2="18"></line>
+                    </svg>
                     <h3 class="text-2xl font-bold mb-4">Connettività</h3>
                     <ul class="space-y-4 text-gray-500 dark:text-gray-400">
                         <li class="flex items-center gap-3">
@@ -289,7 +516,11 @@
                     </ul>
                 </div>
                 <div class="p-8 rounded-3xl border border-gray-100 dark:border-white/10 bg-white dark:bg-white/5">
-                    <span class="material-symbols-outlined text-4xl text-primary mb-6">security</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-primary mb-6">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
                     <h3 class="text-2xl font-bold mb-4">Sicurezza e Accessi</h3>
                     <ul class="space-y-4 text-gray-500 dark:text-gray-400">
                         <li class="flex items-center gap-3">
@@ -356,6 +587,9 @@
                     <li><a href="http://bit.ly/45zxoVX" target="_blank"
                             class="text-white/60 hover:text-primary transition-colors text-sm underline underline-offset-4">Regolamento
                             Hub</a></li>
+                    <li><a href="https://forms.gle/43VbJMkphAVmWshF6" target="_blank"
+                            class="text-white/60 hover:text-primary transition-colors text-sm underline underline-offset-4 font-bold">Diventa
+                            Socio (10€)</a></li>
                     <li>
                         <p class="text-white/60 text-sm">Pignola (PZ), Basilicata</p>
                     </li>

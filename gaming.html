@@ -9,8 +9,7 @@
         content="Scopri la Gaming Area di Hackàra: tornei console, giochi da tavolo e Dungeons & Dragons per bambini e ragazzi a Pignola." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -82,7 +81,19 @@
                     Prenota
                 </a>
                 <button id="mobile-menu-btn" class="md:hidden text-primary p-2">
-                    <span class="material-symbols-outlined text-3xl">menu</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="menu-icon">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="close-icon hidden">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
                 </button>
             </div>
         </div>
@@ -148,15 +159,35 @@
                     </p>
                     <ul class="space-y-4">
                         <li class="flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary">sports_esports</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-primary">
+                                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                <line x1="6" x2="6" y1="12" y2="12"></line>
+                                <line x1="18" x2="18" y1="12" y2="12"></line>
+                                <line x1="12" x2="12" y1="6" y2="10"></line>
+                            </svg>
                             <span>Tornei settimanali di FIFA, Fortnite e Rocket League</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary">group</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-primary">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
                             <span>Aree relax per il gioco in multiplayer locale</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary">school</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-primary">
+                                <path d="M22 10v6"></path>
+                                <path d="M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                            </svg>
                             <span>Percorsi educativi sull'uso consapevole del gaming</span>
                         </li>
                     </ul>
@@ -182,15 +213,34 @@
                     </p>
                     <ul class="space-y-4">
                         <li class="flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary">casino</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-primary">
+                                <rect x="2" y="2" width="20" height="20" rx="2" ry="2"></rect>
+                                <circle cx="8" cy="8" r="1.5"></circle>
+                                <circle cx="16" cy="16" r="1.5"></circle>
+                                <circle cx="12" cy="12" r="1.5"></circle>
+                                <circle cx="16" cy="8" r="1.5"></circle>
+                                <circle cx="8" cy="16" r="1.5"></circle>
+                            </svg>
                             <span>Sessioni di Giochi di Ruolo (RPG) e narrazione condivisa</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary">auto_stories</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-primary">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
                             <span>Laboratori di world-building e sviluppo creativo</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary">strategy</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-primary">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                            </svg>
                             <span>Ampia libreria di giochi da tavolo, card games e strategia</span>
                         </li>
                     </ul>
@@ -264,6 +314,9 @@
                     <li><a href="http://bit.ly/45zxoVX" target="_blank"
                             class="text-white/60 hover:text-primary transition-colors text-sm underline underline-offset-4">Regolamento
                             Hub</a></li>
+                    <li><a href="https://forms.gle/43VbJMkphAVmWshF6" target="_blank"
+                            class="text-white/60 hover:text-primary transition-colors text-sm underline underline-offset-4 font-bold">Diventa
+                            Socio (10€)</a></li>
                     <li>
                         <p class="text-white/60 text-sm">Pignola (PZ), Basilicata</p>
                     </li>

@@ -11,8 +11,7 @@
         content="coworking pignola, innovation hub basilicata, rural innovation, nomadi digitali, hacker culturali, coworking basilicata" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -39,11 +38,7 @@
     </script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/include.js" defer></script>
-    <style>
-        .glitch-overlay {
-            background: linear-gradient(rgba(26, 58, 47, 0.4), rgba(43, 238, 173, 0.1)), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0px, rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 2px);
-        }
-    </style>
+    <script src="js/include.js" defer></script>
 </head>
 
 <body
@@ -84,7 +79,19 @@
                     Prenota
                 </a>
                 <button id="mobile-menu-btn" class="md:hidden text-primary p-2">
-                    <span class="material-symbols-outlined text-3xl">menu</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="menu-icon">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="close-icon hidden">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
                 </button>
             </div>
         </div>
@@ -164,21 +171,48 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div
                             class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white/50 dark:bg-white/5 hover:border-primary/50 transition-colors">
-                            <span class="material-symbols-outlined text-4xl text-primary mb-4">innovazione</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-primary mb-4">
+                                <path d="M12 2v8"></path>
+                                <path d="m4.93 10.93 1.41 1.41"></path>
+                                <path d="M2 18h2"></path>
+                                <path d="m4.93 25.07 1.41-1.41"></path>
+                                <path d="M12 22v8"></path>
+                                <path d="m19.07 25.07-1.41-1.41"></path>
+                                <path d="M22 18h2"></path>
+                                <path d="m19.07 10.93-1.41 1.41"></path>
+                                <path d="M16 18a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"></path>
+                            </svg>
                             <h3 class="text-xl font-bold mb-2">Community Hub</h3>
                             <p class="text-sm opacity-70">Portiamo tecnologie di frontiera nel cuore della Basilicata.
                             </p>
                         </div>
                         <div
                             class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white/50 dark:bg-white/5 hover:border-primary/50 transition-colors">
-                            <span class="material-symbols-outlined text-4xl text-primary mb-4">language</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-primary mb-4">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" x2="22" y1="12" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
                             <h3 class="text-xl font-bold mb-2">Hacking Culturale</h3>
                             <p class="text-sm opacity-70">Riscriviamo i modelli sociali attraverso la creatività
                                 diffusa.</p>
                         </div>
                         <a href="gaming.html"
                             class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white/50 dark:bg-white/5 hover:border-primary/50 transition-colors group">
-                            <span class="material-symbols-outlined text-4xl text-primary mb-4">sports_esports</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-primary mb-4">
+                                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                <line x1="6" x2="6" y1="12" y2="12"></line>
+                                <line x1="18" x2="18" y1="12" y2="12"></line>
+                                <line x1="12" x2="12" y1="6" y2="10"></line>
+                            </svg>
                             <h3 class="text-xl font-bold mb-2">Gaming Area</h3>
                             <p class="text-sm opacity-70">Tornei di console e giochi da tavolo per ragazzi.</p>
                         </a>
@@ -212,21 +246,42 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div
                         class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white dark:bg-background-dark hover:border-primary/50 transition-colors">
-                        <span class="material-symbols-outlined text-4xl text-primary mb-4">groups</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-primary mb-4">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
                         <h3 class="text-xl font-bold mb-2">GDG Basilicata</h3>
                         <p class="text-sm opacity-70">Community di sviluppatori e appassionati di tecnologie Google che
                             organizza meetup, workshop e hackathon.</p>
                     </div>
                     <div
                         class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white dark:bg-background-dark hover:border-primary/50 transition-colors">
-                        <span class="material-symbols-outlined text-4xl text-primary mb-4">cloud</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-primary mb-4">
+                            <path
+                                d="M17.5 19A3.5 3.5 0 0 0 21 15.5c0-1.7-1.1-3.1-2.6-3.4-.3-3.1-2.9-5.6-6-5.6s-5.7 2.4-6 5.6C4.1 12.4 3 13.8 3 15.5A3.5 3.5 0 0 0 6.5 19h11z">
+                            </path>
+                        </svg>
                         <h3 class="text-xl font-bold mb-2">AWS User Group</h3>
                         <p class="text-sm opacity-70">Gruppo di professionisti specializzati in cloud computing che
                             condivide conoscenze sui servizi Amazon Web Services.</p>
                     </div>
                     <div
                         class="p-8 rounded-xl border border-earthy-green/10 dark:border-white/10 bg-white dark:bg-background-dark hover:border-primary/50 transition-colors">
-                        <span class="material-symbols-outlined text-4xl text-primary mb-4">public</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-primary mb-4">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" x2="22" y1="12" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
                         <h3 class="text-xl font-bold mb-2">Progetti Erasmus+</h3>
                         <p class="text-sm opacity-70">Scambi culturali e formativi con tutta Europa che portano giovani
                             da diversi paesi nel borgo.</p>
@@ -341,6 +396,9 @@
                     <li><a href="http://bit.ly/45zxoVX" target="_blank"
                             class="text-white/60 hover:text-primary transition-colors text-sm underline underline-offset-4">Regolamento
                             Hub</a></li>
+                    <li><a href="https://forms.gle/43VbJMkphAVmWshF6" target="_blank"
+                            class="text-white/60 hover:text-primary transition-colors text-sm underline underline-offset-4 font-bold">Diventa
+                            Socio (10€)</a></li>
                     <li>
                         <p class="text-white/60 text-sm">Pignola (PZ), Basilicata</p>
                     </li>
